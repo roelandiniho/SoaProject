@@ -20,3 +20,4 @@ Id, Title and Body are filled randomly with testdata
 
 Go to http://localhost:8000/quotes/1 to get first quote. other numbers work aswell
 
+project op azure: http://roelandpalmansapp.azurewebsites.net/  maar error.
