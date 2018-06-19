@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Use App\Quotes;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('quotes', 'QuotesController@index');
+Route::get('quotes/{quotes}', 'QuotesController@show');
+Route::post('quotes', 'QuotesController@store');
+Route::put('quotes/{quotes}', 'QuotesController@update');
+Route::delete('quotes/{quotes}', 'QuotesController@delete');
